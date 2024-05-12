@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<style>
+		.blink
+		{
+		       animation: blink 1s infinite;
+		       
+		}
+		@keyframes blink
+		{
+                 0%{
+                 	opacity: 1;
+                 }
+                 50%{
+                 	opacity: 0;
+                 }
+                 100%{
+                 	opacity: 1;
+                 }
+		}
+		.hh 
+		{
+			transition: all 0.2s;
+
+		}
+
+		.hh:hover
+		{
+			transform: scale(1.1);
+		}
+		
+
+		
+
+	</style>
+</head>
+<body>
+	<div class="container-fluid " style="background-color:black;">
+		<div class="row text-white ">
+			<div class="d-flex mt-3 ">
+				<div class="flex-grow-1  "><p class="fs-5"> <i class="fa-solid fa-location-dot text-success fs-5"></i>123-Street,New York,USA <i class="fa-regular fa-clock text-success fs-5"></i> Mon-Fri:09:00AM-9:00PM</p></div>
+				<div><p class=""><i class="fa-solid fa-phone  fs-5" style="color:green;"></i><span class="fs-5">+917882712433</span></p> </div>
+				<div><a href="https://facebbok.com"><i class="fa-brands fa-facebook-f  fs-3" style="margin-left: 25px;color: green;"></i></a></div>
+				<div><a href="https://twitter.com"><i class="fa-brands fa-twitter  fs-3" style="margin-left: 25px;color: green;"></i></a></div>
+				<div><a href="https://in.linkedin.com"><i class="fa-brands fa-linkedin-in   fs-3"style="margin-left: 25px;color: green;"></i></a></div>
+				<div><a href="https://www.instagram.com"><i class="fa-brands fa-instagram  fs-3"style="margin-left: 25px;color: green;"></i></a></div>
+				<div><i class="fa-solid fa-cart-shopping fs-3"style="margin-left: 25px;"></i></div> <span class="badge bg-danger  " style="margin-top: -16px; height: 20px;margin-left: -20px;border-radius: 50%;">9</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- <nav bar> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success sticky-top">
+			<div class="container-fluid">
+				<ul class="navbar-nav">
+					<li><a href="#" class="nav-link fs-1 text-white" > Ecommerce Cart      </a></li>
+					<li><a href="#" class="nav-link" style="padding-right:50px ;"> <i class="fa-solid fa-cart-shopping text-white fs-1 mt-3"></i></a></li>
+
+					<!-- Toggle creation -->
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+						
+					</button>
+
+					<div class="collapse navbar-collapse" id="navbarNav">
+
+
+					<li class="nav-item"><a href="Ecommerse.html" class="nav-link fs-5 mt-2 text-white " style="padding-inline: 10px;"> HOME</a></li>
+					<li class="nav-item"><a href="Aboute.html" class="nav-link fs-5 mt-2 text-white" style="padding-inline:10px;"> ABOUT</a></li>
+					
+					
+			
+             <li class="nav-item">
+					<div class="nav-item dropdown ">
+						<a href="mobile.html" class="nav-link mt-2 fs-5 dropdown-toggle text-white "data-bs-toggle="dropdown"style="padding-inline:10px;"> CATEGORY</a>
+
+<div class="dropdown-menu bg- m-0 border border-1 border-success"><a href="mobile.html"class="dropdown-item bg-white text-dark" >Mobiles</a>
+	<a href="Laptop.html " class="dropdown-item bg-white text-dark" >Laptops</a>
+	<a href="watch.html"class="dropdown-item bg-white text-dark" >Watches</a>
+	<a href="Refrii.html"class="dropdown-item bg-white text-dark" >Refrigerator</a>
+</div>
+	 </div>
+					
+				</li>
+
+				 <li class="nav-item">
+					<div class="nav-item dropdown border border-1 border-success"><a href="#" class="nav-link mt-2 fs-5 dropdown-toggle text-white "data-bs-toggle="dropdown"style="padding-inline:10px;"> MORE</a>
+
+<div class="dropdown-menu bg- m-0 border border-1 border-success"><a href=""class="dropdown-item bg-white text-dark" ><i class="fa-solid fa-bell text-primary"></i> Notification Preferences</a>
+	<a href=" " class="dropdown-item bg-white text-dark" ><i class="fa-solid fa-question text-primary"></i> 24*7 Customer Care</a>
+	<a href=""class="dropdown-item bg-white text-dark" ><i class="fa-solid fa-rectangle-ad text-primary"></i> Advertise</a>
+	<a href=""class="dropdown-item bg-white text-dark" ><i class="fa-solid fa-download text-primary"></i> Download App</a>
+</div>
+	 </div>
+		</li>
+
+				<li class="nav-item"><a href="contact us.html" class="nav-link fs-5 mt-2 text-white"style="padding-inline:10px;"> CONTACT</a></li>
+				<li class="nav-item"><input type="text" name="t1" placeholder="  Search" class="mt-2" style="border-radius: 10px; border: none;height: 34px;width: 150px; padding-inline: 10px;">  </li>
+				<li class="nav-item"style="padding-inline:10px;"><i class="fa-solid fa-magnifying-glass mt-2 p-2 bg-white text-center" style="border-radius: 50%;height:35px;width: 35px;"></i></li>
+				<li class="nav-item"><div class="text-center"><button class="btn btn-primary text-white btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#login"  style="margin-left:0px;margin-top: 10px;border-radius: 10px;height: 45px; width:100px;padding-inline: 10px;">Login  <i class="fa-solid fa-arrow-right"></i> </button>
+				</div> </li>
+		
+				
+				</ul>
+			</div>
+		</ul>
+	</div>
+		</nav>
+
+<!-- dropdown code -->
+
+	<div class="modal" id="login">
+		<div class="modal-dialog">
+			<div class="modal-content">
+
+				<div class="modal-header">
+					<h4 class="modal-title">Login Now</h4>
+				</div>
+
+				<div class="modal-body">
+					<div class="mt-3 mb-3">
+						<label>Email</label>
+						<input type="text" name="email" class="form-control">
+					</div>
+
+					<div class="mb-3">
+						<label>Password</label>
+						<input type="Password" name="pwd" class="form-control">
+					</div>
+
+					
+					<input type="submit" name="k3" value="login now" class="btn btn-success">  
+
+					<a href="create account.html"><input type="submit" name="k3" value="Create an account" class="btn btn-primary" style="height: 40px; width: 170px;" > </a>
+				</div>
+
+				<div class="modal-footer">
+					<button class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+		
+		
+		<!-- <slide image> -->
+
+			<div id="slider" class="carousel slide mt-3" data-bs-ride="carousel" style="margin-left:10px;margin-right: 10px;" >
+				<div class="carousel-indicators"><button type="button" data-bs-target="#slider" data-bs-slide-to="0" class="active"></button>
+				<button type="button" data-bs-target="#slider" data-bs-slide-to="1"></button> 
+				<button type="button" data-bs-target="#slider" data-bs-slide-to="2"></button> 
+				<button type="button" data-bs-target="#slider" data-bs-slide-to="3"></button> </div>
+
+				<div class="carousel-inner">
+
+					<div class="carousel-item active">
+						<img src="home img1.jpg" alt="Not Found" class="d-block" style="width:100%;height:350px;background-size: 100%;">
+					</div>
+
+					<div class="carousel-item ">
+						<img src="h img2.jpg" alt="Not Found" class="d-block" style="width:100%;height:350px;background-size: 100px;">
+					</div>
+
+                     <div class="carousel-item ">
+						<img src="h img3.jpg" alt="Not Found" class="d-block" style="width:100%;height: 350px;background-size: 100%; ">
+					</div>
+
+
+
+				<div class="carousel-item ">
+						<img src="h img5.jpg" alt="Not Found" class="d-block" style="width:100%;height:350px;background-size: 100%;">
+					</div>
+				</div>
+
+
+
+				<button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon"></span>
+				</button>
+
+				<button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+					<span class="carousel-control-next-icon"></span>
+				</button>
+
+			</div>
+
+			<!-- <our clints> -->
+
+			<div class="container mt-4 bg-light" style=" align-items: center;justify-content: center;">
+				<div class="row">
+					<h2 class=" text-center text-dark mt-3 mb-3 fw-bold hh ">OUR HAPPY CLIENTS</h2>
+					<hr>
+					<div class="col-lg-3 mt-3">
+						
+						 <span class="badge bg-success fs-3 rounded-circle "><i class="fa-solid fa-people-group"></i></span> <b class="mt-3 fs-3">3543</b>
+						 <h4 class="mt-3">Happy Customers</h4>
+						 <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						 
+						 consequa</p>
+					</div>
+
+					<div class="col-lg-3 mt-3">
+						
+						 <span class="badge bg-success fs-3 rounded-circle "><i class="fa-solid fa-check"></i></span> <b class="mt-3 fs-3">6243</b>
+						 <h4 class="mt-3">Project Done</h4>
+						 <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						 
+						 consequa</p>
+					</div>
+
+					<div class="col-lg-3 mt-3">
+						
+						 <span class="badge bg-success fs-3 rounded-circle "><i class="fa-solid fa-trophy"></i></span> <b class="mt-3 fs-3">3123</b>
+						 <h4 class="mt-3">Awards Win</h4>
+						 <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						 
+						 consequa</p>
+					</div>
+
+					<div class="col-lg-3 mt-3">
+						
+						 <span class="badge bg-success fs-3 rounded-circle "> <i class="fa-solid fa-award"></i> </span> <b class="mt-3 fs-3">1821</b>
+						 <h4 class="mt-3">Expert Workers</h4>
+						 <p style="text-align: justify; margin-bottom: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						 
+						 consequa</p>
+					</div>
+				
+
+				</div>
+			</div>
+			<hr>
+
+			<!-- <..Products> -->
+
+				<div class="container-fluid mt-4" >
+					<div class="row">
+						<div class="d-flex flex-row" style="flex-wrap: wrap;">
+							
+							<div class="shadow-sm text-center" style="background-color:white;margin-left: 0px;">
+							<h3 class="fw-bold mt-3" style="color: blue;margin-left: 10px;margin-right: 10px;"><u>Filter Price</u></h3>
+							<p class="fw-bold fs-6" >&#8377;2000-&#8377;4000   <input type="checkbox" name="t1" class="mt-" style="height: 15px;width: 15px;"> </p>
+
+							<p class="fw-bold fs-6" >&#8377;3000-&#8377;6000  <input type="checkbox" name="t1" class="mt-2" style="height: 15px;width: 15px;"> </p>
+
+							<p class="fw-bold fs-6">&#8377;6000-&#8377;10000  <input type="checkbox" name="t1" class="mt-2" style="height: 15px;width: 15px ;"> </p>
+
+
+							<h3 class="fw-bold mt-3" style="color: blue;"><u>Laptops</u></h3>
+							<p class="fw-bold fs-6">HP</p>
+							<p class="fw-bold fs-6">DELL</p>
+							<p class="fw-bold fs-6">LENOVO</p>
+							<p class="fw-bold fs-6">ACER</p>
+
+							</div>
+					
+
+							<div class="shadow-lg text-center  "style="background-color: white;margin-left: 10px;">
+							<h1 class="text-center">HP</h1>
+							<img src="hplappy.webp" style="width:270px;height:190px;">
+
+							<p class="text-secondary fw-bold text-center mt-3">&#8377; 50000</p>
+
+							<a href="view.html"><button class=" hh fw-bold text-white bg-success mb-4 " style="width:200px;height:43px;border: none;border-radius: 10px;margin-left:;">View Specificatons</button></a>
+							</div>
+
+							<div class="shadow-lg text-center "style="background-color: white;margin-left: 10px;">
+							<h1 class="text-center">LENOVO</h1>
+							<img src="llappy.jpg" style="width:270px;height:190px;">
+
+							<p class="text-secondary fw-bold text-center mt-3">&#8377; 30000</p>
+
+							<a href="view2.html"><button class=" hh fw-bold text-white bg-success mb-4 " style="width:200px;height:43px;border: none;border-radius: 10px;margin-left:;">View Specificatons</button></a>
+							</div>
+
+							<div class="shadow-lg text-center "style="background-color: white;margin-left: 10px;">
+							<h1 class="text-center">DELL</h1>
+							<img src="dlappy.webp" style="width:270px;height:190px;">
+
+							<p class="text-secondary fw-bold text-center mt-3">&#8377; 40000</p>
+
+							<a href="view3.html"><button class=" hh fw-bold text-white bg-success mb-4 " style="width:200px;height:43px;border: none;border-radius: 10px;margin-left:;">View Specificatons</button></a>
+						</div>
+
+						<div class="shadow-lg text-center" style="background-color:white;margin-left: 10px;">
+							<h2 class="fw-bold" style="color:blue ;margin-top: 20px;">OFFERS</h2>
+						<p class="fw-bold"style="margin-left: 0px; margin-top: 30px;">50% 0ff HDFC Credit Card</p>
+						<p class="fw-bold">10% off on SBI Card</p>
+
+						<a href="bg.html"><button class="btn btn-danger text-white text-center p-2 mb-3  " style="height:40px;width:200px;margin-left:10px;margin-top: 20px; margin-right:10px;">Donate Found</button></a>
+
+					</div>
+							
+
+						</div>
+					</div>
+				</div>
+
+				
+	<div class="container-fluid  text-center mt-4"style="background-color:#199ef3;">
+		<div class="row">
+			<div class="col-lg-3 mt-3 mb-2">
+				<div class="blink">  <img src="blink.png" style="width:150px;height:100px;"> </div>
+			</div>
+			<div class="col-lg-9 text-center mt-3">
+				<h1 class="text-success fs-1"style="font-family: cursive;"><span class="text-warning">Hurry up!</span> Exclusive Mansoon OFFERS</h1>
+				<marquee class="text-white mt-3 mb-2 fs-5 fw-bold ">Special Offer Upto march</marquee>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- footer 1 -->
+
+     <div class="container-fluid mt-2 " style="color:blue;background-color:#c9f6ff;">
+		<div class="row">
+			<div class="d-flex">
+				<div class="flex-grow-1" ><p class=" mt-4 mb-3 fs-5 fw-bold "style="margin-left: 150px;">Get Connected With us social networks:</p></div>
+
+				<ul class="nav mb-3 mt-3"style="margin-right: 90px;" >
+					<li><i class="fa-brands fa-facebook-f nav-link fs-3" style="color: blue;"></i></li>
+					<li><i class="fa-brands fa-twitter fs-3 nav-link" style="color:blue;"></i></li>
+					<li><i class="fa-brands fa-google nav-link fs-3"  style="color: blue;"></i></li>
+					<li><i class="fa-brands fa-instagram nav-link fs-3" style="color: blue;"></i></li>
+					<li><i class="fa-brands fa-linkedin-in nav-link fs-3" style="color: blue;"></i></li>
+					<li><i class="fa-solid fa-envelope fs-3 nav-link" style="color: blue;"></i></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- booter 2 -->
+
+	<div class="container-fluid bg-success"style="background-image: url('footer.jpeg');">
+		<div class="row">
+			<div class="col-lg-3 mt-3 ms-5 text-white">
+				<h5 class=" fs-4 text-white">COMPANY NAME</h5>
+				<p class="fw-bold mt-3">MNC Company</p>
+				<p class="fw-bold">bosch</p>
+				<p class="fw-bold">banglore</p>
+				<p class="fw-bold">Karnataka,India</p>
+
+			</div>
+
+			<div class="col-lg-2 mt-3 ms-4 text-white">
+				<h5 class=" fs-4 text-white">PRODUCTS</h5>
+				<p class="fw-bold mt-3">MD Bootstrap</p>
+				<p class="fw-bold">MD Wordpress</p>
+				<p class="fw-bold">BrandFlow</p>
+				<p class="fw-bold">Bootstrap Angular</p>
+			</div>
+
+			<div class="col-lg-2 mt-3 ms-5 text-white">
+				<h5 class=" fs-4 text-white">USEFUL LINKS</h5>
+				<p class="fw-bold mt-3">Your account</p>
+				<p class="fw-bold">Become an Affiliate</p>
+				<p class="fw-bold">Shipping Rates</p>
+				<p class="fw-bold">Help</p>
+			</div>
+
+			<div class="col-lg-3 mt-3 ms-5 text-white">
+				<h5 class=" fs-4 text-white">CONTACT</h5>
+				<p class="fw-bold mt-3"><i class="fa-solid fa-house-chimney"></i>New York,NY 10012,us</p>
+				<p class="fw-bold"><i class="fa-solid fa-envelope"></i>info @example.com</p>
+				<p class="fw-bold"><i class="fa-solid fa-phone"></i>+0188457829</p>
+				<p class="fw-bold"><i class="fa-solid fa-mobile-retro"></i>+0123456893</p>
+			</div>
+
+		</div>
+	</div>
+	<!-- footer3 -->
+
+	<div class="container-fluid text-center" style="color: blue;background-color: #c9f6ff;">
+		<div class="row">
+			<h6 class="mt-3 mb-5 fs-5">&copy copyrigh-2023:E Commerse Online Shopping cart | <span class="text-success fw-bold">Designed By Yashavant Naik</span></h6>
+		</div>
+	</div>
+</body>
+</html>
